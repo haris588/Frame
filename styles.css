@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "sans-serif";
+}
+
+.container {
+  background-image: linear-gradient( 180deg, rgb(133, 64, 64), rgb(255, 255, 255));
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1em;
+}
+
+.nav-title {
+  color: #fff;
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.nav-list-item {
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+  transition: all 250ms;
+}
+
+.nav-list-item:hover, .nav-list-item:focus {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.intro-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro-title {
+  color: #fff;
+  font-size: 2.5rem;
+  opacity: 0.9;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.intro-sub-title {
+  color: #fff;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 900;
+  border-radius: 5px;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+.btn-colored {
+  background: lightcoral;
+}
+
+.btn-transparent {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-colored:hover, .btn-colored:focus {
+  background: rgb(122, 28, 11);
+}
+
+.btn-transparent:hover, .btn-transparent:focus {
+  background: rgb(136, 110, 110);
+}
+
+.container-services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.mobile-container {
+  padding: 1em;
+  max-width: 300px;
+}
+
+.mobile-title {
+  font-size: 1.5rem;
+  color: rgb(128, 15, 15);
+}
+
+.mobile-body {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 2em 0;
+}
+
+.revenue-container {
+  max-width: 300px;
+  padding: 1em;
+}
+
+.revenue-title {
+  font-size: 1.5rem;
+  color: rgb(128, 15, 15);
+}
+
+.revenue-body {
+  font-size: 1rem;
+  margin: 2em 0;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.smart-idea-container {
+  max-width: 300px;
+  padding: 1em;
+}
+
+.smart-idea-title {
+  font-size: 1.5rem;
+  color: rgb(128, 15, 15);
+}
+
+.smart-idea-body {
+  font-size: 1rem;
+  margin: 2em 0;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.learn-more {
+  color: rgb(128, 15, 15);
+  text-decoration: none;
+}
+
+.modal-bg {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1em;
+}
+
+.modal-bg-active {
+  display: flex;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  padding: 1em;
+  width: 500px;
+  background: rgb(253, 230, 230);
+  border-radius: 10px;
+}
+
+.modal h1 {
+  color: rgb(128, 15, 15);
+  margin-bottom: 0.8em;
+}
+
+.modal input {
+  padding: .8em;
+  margin: .5em;
+  max-width: 200px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.modal-btn {
+  display: inline-block;
+  padding: 1em 2em;;
+  border: 0;
+  background: lightcoral;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  max-width: 200px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: .6em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.modal-btn:hover,.modal-btn:focus {
+  transform: scale(1.1);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  font-size: 22px;
+}
+
+@media (max-width: 850px) {
+  .container {
+    height: 40vh;
+  }
+  .navigation {
+    justify-content: center;
+  }
+  .nav-title {
+    display:none;
+  }
+  .nav-list-item {
+    font-size:1rem;
+  }
+  .container-services {
+    flex-direction: column;
+  }
+  .mobile-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .revenue-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .smart-idea-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
